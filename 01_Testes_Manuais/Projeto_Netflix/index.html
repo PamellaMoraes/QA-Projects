@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Project: Netflix Mobile & TV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Identidade Visual Netflix */
+        :root { 
+            --primary: #E50914; /* Vermelho Netflix */
+            --dark: #141414;    /* Fundo Quase Preto */
+            --gray: #333333;    /* Cards Escuros */
+            --light: #f5f5f1;   /* Texto Claro */
+            --warning: #ffc107; /* Amarelo para 'Em Andamento' */
+        }
+
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; background: var(--dark); color: var(--light); }
+        
+        header { 
+            background: #000000; 
+            padding: 2rem; 
+            text-align: center; 
+            border-bottom: 4px solid var(--primary); 
+            position: relative; 
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(20,20,20,1));
+        }
+
+        .back-nav { position: absolute; top: 20px; left: 20px; }
+        .back-nav a { color: var(--light); text-decoration: none; font-size: 0.9rem; border: 1px solid var(--gray); padding: 5px 15px; border-radius: 4px; transition: 0.3s; }
+        .back-nav a:hover { background: var(--primary); border-color: var(--primary); }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+
+        /* Badge de Status */
+        .status-badge {
+            background-color: var(--warning);
+            color: #000;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .dashboard-img { width: 100%; border-radius: 8px; border: 1px solid var(--gray); margin: 20px 0; opacity: 0.9; }
+
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+        
+        /* Cards Escuros para combinar com o tema */
+        .card { background: var(--gray); padding: 20px; border-radius: 4px; text-align: center; border-top: 3px solid transparent; }
+        .card:hover { border-top: 3px solid var(--primary); transition: 0.3s; }
+        .number { font-size: 2rem; font-weight: bold; color: var(--primary); display: block; margin-bottom: 5px; }
+        .sub-text { font-size: 0.85rem; color: #ccc; }
+
+        .btn-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-top: 20px; }
+        .btn { display: block; padding: 12px; background: var(--gray); border: 1px solid #444; text-decoration: none; color: white; border-radius: 4px; text-align: center; font-weight: 500; transition: 0.3s; }
+        .btn:hover { background: var(--primary); border-color: var(--primary); }
+
+        /* Seção de Bug Ativo */
+        .bug-section { background: #222; border-left: 5px solid var(--warning); padding: 20px; margin-top: 30px; border-radius: 4px; }
+        video { width: 100%; border-radius: 4px; margin-top: 15px; border: 1px solid #333; }
+        
+        h1, h2 { margin-top: 0; font-weight: 500; }
+        
+        /* Barra de Progresso Simples */
+        .progress-container { background: #333; border-radius: 10px; height: 10px; width: 100%; margin: 10px 0; overflow: hidden; }
+        .progress-bar { background: var(--warning); height: 100%; width: 45%; } /* 45% de progresso */
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="back-nav"><a href="estante.html"><i class="fa-solid fa-arrow-left"></i> Voltar</a></div>
+        <span class="status-badge"><i class="fa-solid fa-person-digging"></i> Em Andamento</span>
+        <h1>🍿 Validação de Player: Netflix</h1>
+        <p>Ciclo 1: Testes de Reprodução e Login (Mobile & Smart TV)</p>
+    </header>
+
+    <div class="container">
+        
+        <img src="Dashboard_Netflix_WIP.png" alt="Dashboard do Projeto Netflix" class="dashboard-img">
+        
+        <div style="margin-bottom: 20px;">
+            <span style="float: right; font-size: 0.9rem; color: var(--warning);">45% Concluído</span>
+            <span>Progresso da Execução</span>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="card">
+                <span class="number">25</span>
+                Cenários Planejados
+                <div class="sub-text">11 Executados</div>
+            </div>
+            <div class="card">
+                <span class="number" style="color: var(--warning);">03</span>
+                Bugs em Análise
+                <div class="sub-text">Prioridade Alta</div>
+            </div>
+            <div class="card">
+                <span class="number">iOS/TV</span>
+                Dispositivos
+                <div class="sub-text">Ambiente de Teste</div>
+            </div>
+            <div class="card">
+                <span class="number">V.0.4</span>
+                Versão do App
+                <div class="sub-text">Beta Build</div>
+            </div>
+        </div>
+
+        <h2>📂 Artefatos do Projeto (Drafts)</h2>
+        <div class="btn-grid">
+            <a href="#" class="btn"><i class="fa-regular fa-file-pdf"></i> Plano de Teste (v0.5)</a>
+            <a href="#" class="btn"><i class="fa-solid fa-table"></i> Casos de Teste (WIP)</a>
+            <a href="#" class="btn"><i class="fa-solid fa-bug"></i> Backlog de Bugs</a>
+            <a href="#" class="btn" style="opacity: 0.5; cursor: not-allowed;" title="Indisponível no momento"><i class="fa-solid fa-lock"></i> Relatório Final</a>
+        </div>
+
+        <div class="bug-section">
+            <h2 style="color: var(--warning);"><i class="fa-solid fa-triangle-exclamation"></i> Investigação em Curso: NET-402</h2>
+            <p><strong>Latência no Carregamento 4K:</strong> O player apresenta <em>buffering</em> infinito ao tentar alterar a qualidade de vídeo manualmente em redes instáveis.</p>
+            <p style="font-size: 0.9rem; color: #aaa;">*Status: Aguardando logs do desenvolvedor (DevTools).</p>
+            
+            <video controls poster="Dashboard_Netflix_WIP.png">
+                <source src="evidences/netflix_buffering_issue.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </div>
+
+    </div>
+
+</body>
+</html>

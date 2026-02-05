@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Project: Udemy Search Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #A435F0;
+            --dark: #1C1D1F;
+            --light: #F7F9FA;
+            --danger: #dc3545;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: var(--light);
+            color: var(--dark);
+        }
+
+        header {
+            background: var(--dark);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--primary);
+            position: relative;
+        }
+
+        .back-nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .back-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            border: 1px solid #555;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+
+        .back-nav a:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .dashboard-img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary);
+            display: block;
+        }
+
+        .btn-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: block;
+            padding: 12px;
+            background: white;
+            border: 1px solid #ddd;
+            text-decoration: none;
+            color: var(--dark);
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .bug-section {
+            background: #fff0f0;
+            border-left: 5px solid var(--danger);
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 4px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+        }
+
+        h1,
+        h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="back-nav"><a href="estante.html"><i class="fa-solid fa-arrow-left"></i> Voltar</a></div>
+        <h1>🔍 Validação de Busca: Udemy</h1>
+        <p>Projeto de QA Manual | Testes Funcionais & Exploratórios</p>
+    </header>
+
+    <div class="container">
+
+        <img src="Dashboard_QA_Projeto_Udemy.png" alt="Dashboard do Projeto" class="dashboard-img">
+
+        <div class="metrics-grid">
+            <div class="card"><span class="number">12</span>Cenários Testados</div>
+            <div class="card"><span class="number">50%</span>Taxa de Falha</div>
+            <div class="card"><span class="number" style="color:var(--danger)">06</span>Bugs Reportados</div>
+            <div class="card"><span class="number">Web</span>Plataforma</div>
+        </div>
+
+        <h2>📂 Documentação Técnica</h2>
+        <div class="btn-grid">
+            <a href="1_Plano_de_Teste_Udemy_v1.0.pdf" target="_blank" class="btn">📄 Plano de Teste (PDF)</a>
+
+
+            <a href="/01_Testes_Manuais/Projeto_Udemy/2_Casos_de_Teste_Udemy_v1.0.md" class="btn"> 🧪 Casos de Teste
+                (WEB)</a>
+
+            <a href="/01_Testes_Manuais/Projeto_Udemy/3_Bug_Reportados_Udemy_v1.0.md" class="btn">🐞 Report de Bugs
+                (WEB)</a>
+
+            <a href="4_Relatorio_Execucao_Testes_Udemy_v1.0.pdf" target="_blank" class="btn">📈 Relatório Final
+                (PDF)</a>
+        </div>
+
+        <div class="bug-section">
+            <!-- Substitua aqui --- -->
+            <h2>🚨 Bugs Críticos e de Alta Prioridade</h2>
+            <p style="margin-bottom: 25px; color: #666;">
+                Abaixo estão listadas as falhas de severidade <strong>Highest</strong> (Altíssima) e
+                <strong>High</strong> (Alta) que comprometem a navegação e a confiabilidade dos resultados.
+            </p>
+
+            <div
+                style="background: white; border-left: 6px solid var(--danger); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); overflow: hidden; margin-bottom: 30px;">
+
+                <div
+                    style="padding: 20px; border-bottom: 1px solid #eee; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px;">
+                    <div>
+                        <span
+                            style="background: var(--danger); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; text-transform: uppercase;">QAUDEMY-13</span>
+                        <span
+                            style="background: #ffe6e6; color: var(--danger); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-left: 5px;">Sev:
+                            Highest</span>
+                    </div>
+                    <div style="color: #666; font-size: 0.9rem;"><i class="fa-solid fa-code-branch"></i> Relacionado ao
+                        CT.05</div>
+                </div>
+
+                <div
+                    style="padding: 25px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+
+                    <div>
+                        <h3 style="margin-top: 0; color: var(--dark); font-size: 1.3rem;">
+                            [Frontend] Erro 404: Parâmetro "undefined" na URL
+                        </h3>
+                        <p style="line-height: 1.6; color: #444;">
+                            <strong>Descrição:</strong> Ao realizar uma busca vazia ou aplicar filtros específicos sem
+                            termo definido, o sistema monta a URL incorretamente injetando a string "undefined", o que
+                            leva o usuário a uma página de erro (404).
+                        </p>
+
+                        <div
+                            style="background: #f8f9fa; padding: 15px; border-radius: 6px; margin: 15px 0; border: 1px solid #e9ecef;">
+                            <h4 style="margin: 0 0 10px 0; font-size: 0.9rem; color: #666; text-transform: uppercase;">
+                                🔬 Análise Técnica (Logs)</h4>
+                            <code
+                                style="display: block; font-family: 'Consolas', monospace; color: #d63384; font-size: 0.85rem; background: #fff; padding: 10px; border: 1px solid #ddd; border-radius: 4px; white-space: pre-wrap; word-break: break-all;">
+GET https://www.udemy.com/courses/search/undefined/
+Status: 404 (Not Found)
+                            </code>
+                        </div>
+
+                        <div style="margin-top: 20px;">
+                            <strong style="color: var(--primary); display: block; margin-bottom: 5px;">Expectativa vs.
+                                Realidade:</strong>
+                            <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.95rem;">
+                                <li style="margin-bottom: 8px; color: #28a745;"><i class="fa-solid fa-check-circle"></i>
+                                    <strong>Esperado:</strong> O sistema deveria ignorar a busca vazia ou solicitar um
+                                    termo válido.</li>
+                                <li style="color: var(--danger);"><i class="fa-solid fa-times-circle"></i>
+                                    <strong>Atual:</strong> Redirecionamento forçado para rota inexistente
+                                    (.../undefined).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 style="margin-top: 0; color: #444;">📸 Evidência Visual</h4>
+
+                        <div style="margin-bottom: 15px;">
+                            <span style="font-size: 0.8rem; color: #666; display: block; margin-bottom: 5px;">Reprodução
+                                da falha (Vídeo):</span>
+                            <video controls
+                                poster="CT05_CT.05 – [Filtros] – Validar exclusão de cursos gratuitos ao filtrar por Preço (Pago).png"
+                                style="width: 100%; border-radius: 6px; border: 1px solid #ddd;">
+                                <source
+                                    src="/01_Testes_Manuais/Projeto_Udemy/Evidencias/02.CT_Falhou/CT.05/CT05_CT.05 – [Filtros] – Validar exclusão de cursos gratuitos ao filtrar por Preço (Pago).mp4"
+                                    type="video/mp4">
+                                Seu navegador não suporta a tag de vídeo.
+                            </video>
+                        </div>
+
+                        <div>
+                            <span style="font-size: 0.8rem; color: #666; display: block; margin-bottom: 5px;">Captura de
+                                Tela (Clique para ampliar):</span>
+                            <a href="/01_Testes_Manuais/Projeto_Udemy/Evidencias/02.CT_Falhou/CT.05/CT05_CT.05 – [Filtros] – Validar exclusão de cursos gratuitos ao filtrar por Preço (Pago).png"
+                                target="_blank"
+                                style="display: block; position: relative; overflow: hidden; border-radius: 6px; border: 1px solid #ddd; transition: transform 0.2s;">
+                                <img src="CT05_CT.05 – [Filtros] – Validar exclusão de cursos gratuitos ao filtrar por Preço (Pago).png"
+                                    alt="Evidência do Bug"
+                                    style="width: 100%; height: 150px; object-fit: cover; display: block;">
+                                <div
+                                    style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.6); color: white; padding: 5px 10px; font-size: 0.8rem; text-align: center;">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> Ver em tela cheia
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px; margin-bottom: 60px;">
+                <h3
+                    style="font-size: 1.2rem; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">
+                    Outras Inconsistências Relevantes</h3>
+
+                <div style="display: grid; gap: 15px;">
+
+                    <div
+                        style="background: white; padding: 15px; border-radius: 6px; border-left: 4px solid #cb0404; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        <div>
+                            <strong style="display: block; color: #333;">QAUDEMY-16: Falha de Persistência de Filtro
+                                (Filtro Fantasma)</strong>
+                            <span style="font-size: 0.85rem; color: #666;">A lista de cursos não atualiza ao remover
+                                filtros e exibe resultados desconexos na paginação.</span>
+                        </div>
+                        <span
+                            style="background: #f1c9c9; color: #cb0404; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; white-space: nowrap; margin-left: 10px;">High</span>
+                    </div>
+
+                    <div
+                        style="background: white; padding: 15px; border-radius: 6px; border-left: 4px solid #ffc107; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        <div>
+                            <strong style="display: block; color: #333;">QAUDEMY-15: Relevância de Busca (Falso
+                                Positivo)</strong>
+                            <span style="font-size: 0.85rem; color: #666;">Busca por "Excel" retorna conteúdo não
+                                relacionado (ex: Caligrafia Árabe) ao aplicar filtros compostos.</span>
+                        </div>
+                        <span
+                            style="background: #fff3cd; color: #856404; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; white-space: nowrap; margin-left: 10px;">Medium</span>
+                    </div>
+
+                </div>
+            </div>
+
+           <div style="margin-top: 60px; padding-top: 40px; border-top: 1px solid #ddd; font-family: sans-serif;">
+    <h2 style="text-align: center; margin-bottom: 40px;">🎯 Competências e Ferramentas Aplicadas</h2>
+
+    <div style="background: #f8f9fa; border-radius: 8px; padding: 25px; border: 1px solid #dee2e6; margin-bottom: 40px;">
+        <h3 style="margin-top: 0; color: #212529; font-size: 1.2rem; margin-bottom: 15px;">🔍 Investigação de Causa Raiz via DevTools</h3>
+        <p style="font-size: 1.05rem; line-height: 1.6; color: #333; margin: 0;">
+            Não me limitei a reportar erros visuais. Utilizei as abas <strong>Network</strong> e <strong>Console</strong> do Chrome DevTools para identificar falhas de requisição HTTP (Erro 404) causadas por parâmetros mal formados (undefined) na construção das URLs de busca. Isso permitiu um reporte técnico preciso para a equipe de desenvolvimento.
+        </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-bottom: 40px;">
+        
+        <div style="background: #fdfbf7; padding: 25px 20px; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); position: relative; border-bottom: 2px solid #e0e0e0;">
+            <div style="width: 14px; height: 14px; background: #e74c3c; border-radius: 50%; position: absolute; top: 10px; left: 50%; transform: translateX(-50%); box-shadow: inset 2px -2px 5px rgba(0,0,0,0.2), 1px 2px 3px rgba(0,0,0,0.4); border: 2px solid #fff;"></div>
+            <h4 style="margin: 15px 0 10px 0; text-align: center; color: #2c3e50;">Testes de Caixa Preta & Exploratórios</h4>
+            <p style="font-size: 0.9rem; color: #555; margin: 0; text-align: center; line-height: 1.5;">Foco na experiência do usuário e comportamento do sistema sob condições de estresse e entradas inválidas.</p>
+        </div>
+
+        <div style="background: #fdfbf7; padding: 25px 20px; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); position: relative; border-bottom: 2px solid #e0e0e0;">
+            <div style="width: 14px; height: 14px; background: #e74c3c; border-radius: 50%; position: absolute; top: 10px; left: 50%; transform: translateX(-50%); box-shadow: inset 2px -2px 5px rgba(0,0,0,0.2), 1px 2px 3px rgba(0,0,0,0.4); border: 2px solid #fff;"></div>
+            <h4 style="margin: 15px 0 10px 0; text-align: center; color: #2c3e50;">Análise de Requisições HTTP</h4>
+            <p style="font-size: 0.9rem; color: #555; margin: 0; text-align: center; line-height: 1.5;">Monitoramento de tráfego de rede para validação de integridade de dados e respostas de API.</p>
+        </div>
+
+        <div style="background: #fdfbf7; padding: 25px 20px; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); position: relative; border-bottom: 2px solid #e0e0e0;">
+            <div style="width: 14px; height: 14px; background: #e74c3c; border-radius: 50%; position: absolute; top: 10px; left: 50%; transform: translateX(-50%); box-shadow: inset 2px -2px 5px rgba(0,0,0,0.2), 1px 2px 3px rgba(0,0,0,0.4); border: 2px solid #fff;"></div>
+            <h4 style="margin: 15px 0 10px 0; text-align: center; color: #2c3e50;">Gestão de Defeitos</h4>
+            <p style="font-size: 0.9rem; color: #555; margin: 0; text-align: center; line-height: 1.5;">Ciclo completo de vida do bug, desde a identificação até o reporte detalhado com foco em reprodutibilidade.</p>
+        </div>
+
+        <div style="background: #fdfbf7; padding: 25px 20px; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); position: relative; border-bottom: 2px solid #e0e0e0;">
+            <div style="width: 14px; height: 14px; background: #e74c3c; border-radius: 50%; position: absolute; top: 10px; left: 50%; transform: translateX(-50%); box-shadow: inset 2px -2px 5px rgba(0,0,0,0.2), 1px 2px 3px rgba(0,0,0,0.4); border: 2px solid #fff;"></div>
+            <h4 style="margin: 15px 0 10px 0; text-align: center; color: #2c3e50;">Documentação de Testes</h4>
+            <p style="font-size: 0.9rem; color: #555; margin: 0; text-align: center; line-height: 1.5;">Elaboração de Planos de Teste, Suítes de Casos de Teste e Relatórios de Execução (Sumário Executivo).</p>
+        </div>
+    </div>
+
+   <div style="background: #f8f9fa; border-radius: 8px; padding: 25px; border: 1px solid #dee2e6; margin-bottom: 40px;">
+        <h3 style="margin-top: 0; color: #212529; font-size: 1.2rem; margin-bottom: 15px;">💼 Diferencial de Negócio e Métricas</h3>
+        <ul style="margin: 0; padding-left: 20px; color: #333; line-height: 1.7;">
+            <li style="margin-bottom: 10px;">
+                <strong>Análise de Métricas:</strong> Identifiquei uma taxa de falha de 50% nos cenários testados (12 CTs executados), sinalizando riscos críticos para a conversão de vendas e usabilidade da plataforma.
+            </li>
+            <li style="margin-bottom: 10px;">
+                <strong>Foco em UX e Regras de Negócio:</strong> Validação rigorosa de filtros laterais e persistência de dados, garantindo que a jornada de compra do usuário não seja interrompida por resultados irrelevantes.
+            </li>
+            <li>
+                <strong>Ambiente Controlado:</strong> Testes realizados em Chrome v143 (Modo Anônimo) para garantir isolamento de cache e reprodutibilidade fiel.
+            </li>
+        </ul>
+    </div>
+    
+</div>
+            <div class="project-footer"
+                style="margin-top: 30px; text-align: center; font-size: 0.85rem; color: #777; border-top: 1px solid #eee; padding-top: 15px;">
+                © Todos os direitos reservados. Projeto realizado em janeiro de 2026 .
+            </div>
+
+
+        </div>
+
+</body>
+
+</html>
