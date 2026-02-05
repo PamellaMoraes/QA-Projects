@@ -1,33 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos Manuais | Pamella de Moraes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root { --primary: #A435F0; --dark: #1C1D1F; --bg: #F7F9FA; }
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); color: var(--dark); }
-        header { background: white; padding: 20px; border-bottom: 1px solid #ddd; display: flex; align-items: center; justify-content: space-between; }
-        .back-btn { text-decoration: none; color: #666; font-weight: 600; display: flex; align-items: center; gap: 5px; }
-        .back-btn:hover { color: var(--primary); }
-        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
-        h1 { font-size: 2rem; margin-bottom: 40px; border-left: 5px solid var(--primary); padding-left: 15px; }
-        .projects-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; }
-        .project-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; text-decoration: none; color: inherit; border: 1px solid #eee; display: flex; flex-direction: column; }
-        .project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-color: var(--primary); }
-        .card-img { height: 140px; background: #e9ecef; display: flex; align-items: center; justify-content: center; position: relative; }
-        .card-img i { font-size: 3rem; color: #A435F0; }
-        .card-body { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
-        .card-title { margin: 0 0 10px; font-size: 1.2rem; font-weight: 700; color: #333; }
-        .card-desc { color: #666; font-size: 0.9rem; line-height: 1.5; margin-bottom: 15px; }
-        .tags { margin-top: auto; display: flex; gap: 5px; }
-        .tag { background: #f0f0f0; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; color: #555; }
-        .statusC { position: absolute; top: 10px; right: 10px; background: #d3f9d8; color: #0b7285; padding: 4px 10px; border-radius: 20px; font-size: 0.7rem; font-weight: bold;
-         }
-          .statusA { position: absolute; top: 10px; right: 10px; background: #a8a6a6; color: #2f2f2f; padding: 4px 10px; border-radius: 20px; font-size: 0.7rem; font-weight: bold;}
+        :root {
+            --primary: #A435F0;
+            --dark: #1C1D1F;
+            --bg: #F7F9FA;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: var(--bg);
+            color: var(--dark);
+        }
+
+        header {
+            background: white;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .back-btn {
+            text-decoration: none;
+            color: #666;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .back-btn:hover {
+            color: var(--primary);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            border-left: 5px solid var(--primary);
+            padding-left: 15px;
+        }
+
+        .projects-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: 0.3s;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary);
+        }
+
+        .card-img {
+            height: 140px;
+            background: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .card-img i {
+            font-size: 3rem;
+            color: #A435F0;
+        }
+
+        .card-body {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            margin: 0 0 10px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .card-desc {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .tags {
+            margin-top: auto;
+            display: flex;
+            gap: 5px;
+        }
+
+        .tag {
+            background: #f0f0f0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            color: #555;
+        }
+
+        .statusC {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #d3f9d8;
+            color: #0b7285;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        .statusA {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #a8a6a6;
+            color: #2f2f2f;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
     </style>
 </head>
+
 <body>
 
     <header>
@@ -38,14 +165,15 @@
     <div class="container">
         <h1>Meus Projetos Manuais</h1>
         <div class="projects-list">
-           <a href="01_Testes_Manuais/Projeto_Udemy/index.html" class="project-card">
+            <a href="01_Testes_Manuais/Projeto_Udemy/index.html" class="project-card">
                 <div class="card-img">
                     <div class="statusC">Concluído</div>
-                   <i class="fa-solid fa-graduation-cap"></i>
+                    <i class="fa-solid fa-graduation-cap"></i>
                 </div>
                 <div class="card-body">
                     <h3 class="card-title">Validação de Busca: Udemy</h3>
-                    <p class="card-desc">Teste funcional completo do mecanismo de busca e filtros. Inclui análise de bugs 404 e usabilidade.</p>
+                    <p class="card-desc">Teste funcional completo do mecanismo de busca e filtros. Inclui análise de
+                        bugs 404 e usabilidade.</p>
                     <div class="tags">
                         <span class="tag">Web</span>
                         <span class="tag">Jira</span>
@@ -54,15 +182,16 @@
                 </div>
             </a>
 
-            
-              <a href="01_Testes_Manuais/Projeto_Netflix/index.html" class="project-card">
+
+            <a href="01_Testes_Manuais/Projeto_Netflix/index.html" class="project-card">
                 <div class="card-img">
                     <div class="statusA">Em Andamento</div>
-                   <i class="fa-solid fa-film"></i>
+                    <i class="fa-solid fa-film"></i>
                 </div>
                 <div class="card-body">
                     <h3 class="card-title">Validação de busca e catalogo da Netflix.</h3>
-                    <p class="card-desc">Teste funcional completo do mecanismo de busca e filtros. Inclui análise de bugs 404 e usabilidade.</p>
+                    <p class="card-desc">Teste funcional completo do mecanismo de busca e filtros. Inclui análise de
+                        bugs 404 e usabilidade.</p>
                     <div class="tags">
                         <span class="tag">Web</span>
                         <span class="tag">Jira</span>
@@ -72,8 +201,9 @@
             </a>
 
         </div>
-        
+
     </div>
 
 </body>
+
 </html>
