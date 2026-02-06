@@ -1,7 +1,10 @@
 
 # 🛡️ QA_Quality_Assurance
 
+[![Portfólio QA](https://img.shields.io/badge/Acessar_Portfólio_Online-100000?style=for-the-badge&logo=github&logoColor=white)](https://pamellamoraes.github.io/QA-Projects/)
+
 Bem-vindo ao meu **Repositório de QA**. Este ambiente reflete minha jornada de transição de carreira para a área de Tecnologia, transformando teoria em prática documentada.
+Este ambiente reflete minha jornada de transição de carreira para a área de Tecnologia, transformando teoria em prática documentada.
 
 ## 🎯 Minha Metodologia
 Meu foco não é apenas "encontrar erros", mas garantir a qualidade através de um processo estruturado de engenharia. Em todos os projetos deste repositório, sigo o **Ciclo de Vida de Teste de Software (STLC)** completo:
