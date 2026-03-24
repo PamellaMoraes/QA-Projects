@@ -1,6 +1,4 @@
-# 🐞 Report de Bugs - Udemy (Brutamente Completo)
-
-Nesta página você encontra o detalhamento técnico de cada falha identificada durante o ciclo de testes.
+## Bugs Reportados
 
 | CT Relacionado | ID do Bug | Título do Bug | Severidade | Prioridade | Descrição do Problema | Passos para Reproduzir | Resultado Esperado | Resultado Atual | Ambiente de Teste | Evidências/Anexos | Observações Técnicas |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -95,8 +93,6 @@ CT.11 - Filtro sem Resultados (Zero Match). image_04.jpg
 CT.11 - Filtro sem Resultados (Zero Match)..mp4
 CT.11 - Filtro sem Resultados (Zero Match)..png |  |
 
-
----
 
 ## 💾 Download da Planilha Completa
 Para auditar o documento original em Excel com todos os logs e métricas originais:
