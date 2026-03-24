@@ -1,6 +1,8 @@
-## Bugs Reportados
+# 🐞 Relatório Completo de Bugs
 
-| CT Relacionado | ID do Bug | Título do Bug | Severidade | Prioridade | Descrição do Problema | Passos para Reproduzir | Resultado Esperado | Resultado Atual | Ambiente de Teste | Evidências/Anexos | Observações Técnicas |
+## 📋 Bugs Reportados
+
+| CT Relacionado | 🆔 ID do Bug | 🐞 Título do Bug | 🆔 Severidade | 🆔 Prioridade | 📝 Descrição do Problema | Passos para Reproduzir | Resultado Esperado | Resultado Atual | Ambiente de Teste | 🆔 Evidências/Anexos | Observações Técnicas |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | CT.05 | QAUDEMY-13 | BUG - [Frontend] Erro 404 na Busca: Sistema envia parâmetro "undefined" na URL | Alta (Porque o sistema quebrou e mostrou uma tela de erro em vez de só avisar o usuário que não podia pesquisar vazio.) | Alta (Porque pesquisar é a coisa mais importante do site, e dar erro logo na cara assusta quem quer achar um curso.) | Ao tentar realizar uma busca vazia, o sistema monta a URL incorretamente inserindo a string "undefined", gerando erro 404. | # Acessar a Home Page da Udemy (deslogado).
 # Abrir o DevTools (F12) > aba Network.
@@ -92,6 +94,8 @@ CT.11 - Filtro sem Resultados (Zero Match). image_03.jpg
 CT.11 - Filtro sem Resultados (Zero Match). image_04.jpg
 CT.11 - Filtro sem Resultados (Zero Match)..mp4
 CT.11 - Filtro sem Resultados (Zero Match)..png |  |
+
+
 
 
 ## 💾 Download da Planilha Completa
